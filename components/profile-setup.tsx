@@ -280,9 +280,8 @@ export function ProfileSetup({
                   return (
                     <label
                       key={r.value}
-                      className={`flex cursor-pointer items-center gap-2 rounded-md px-1.5 py-1 text-sm transition ${
-                        checked ? "bg-emerald-500/10" : "hover:bg-card"
-                      }`}
+                      className={`flex cursor-pointer items-center gap-2 rounded-md px-1.5 py-1 text-sm transition ${checked ? "bg-emerald-500/10" : "hover:bg-card"
+                        }`}
                     >
                       <Checkbox
                         checked={checked}

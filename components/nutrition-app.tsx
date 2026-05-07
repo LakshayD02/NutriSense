@@ -102,7 +102,7 @@ export function NutritionApp() {
     if (todayEntries.length === 0) return 0
     return Math.round(
       todayEntries.reduce((sum, e) => sum + e.analysis.healthScore, 0) /
-        todayEntries.length,
+      todayEntries.length,
     )
   }, [todayEntries])
 
@@ -225,11 +225,10 @@ export function NutritionApp() {
             <button
               key={item.id}
               onClick={() => setActiveSection(item.id)}
-              className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all duration-200 ${
-                activeSection === item.id
+              className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all duration-200 ${activeSection === item.id
                   ? "bg-brand-gradient text-primary-foreground shadow-md shadow-primary/20"
                   : "text-muted-foreground hover:bg-secondary/70 hover:text-foreground"
-              }`}
+                }`}
             >
               <item.icon className="h-4 w-4" />
               {item.label}
@@ -582,11 +581,10 @@ function StatCard({
       {pct !== null && (
         <div className="mt-2 h-1 w-full overflow-hidden rounded-full bg-foreground/5">
           <div
-            className={`h-full rounded-full transition-all duration-700 ease-out ${
-              tone === "emerald" ? "bg-emerald-500" :
-              tone === "amber" ? "bg-amber-500" :
-              tone === "sky" ? "bg-sky-500" : "bg-orange-500"
-            }`}
+            className={`h-full rounded-full transition-all duration-700 ease-out ${tone === "emerald" ? "bg-emerald-500" :
+                tone === "amber" ? "bg-amber-500" :
+                  tone === "sky" ? "bg-sky-500" : "bg-orange-500"
+              }`}
             style={{ width: `${pct}%` }}
           />
         </div>

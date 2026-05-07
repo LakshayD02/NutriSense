@@ -7,12 +7,16 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'NutriSense — AI Nutrition Assistant',
+  title: 'NutriSense | AI Nutrition Assistant',
   description:
-    'Personalized, real-time nutrition coaching powered by Gemini. Log food via text or photo, get instant analysis, and receive contextual meal recommendations.',
-  generator: 'v0.app',
+    'Track your meals intelligently with NutriSense. Snap a photo or describe what you ate to receive instant nutritional insights, calorie breakdowns, and personalized meal suggestions powered by advanced AI.',
+  generator: 'NutriSense',
   icons: {
     icon: [
+      {
+        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2310b981'/%3E%3Cstop offset='100%25' stop-color='%23059669'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23g)'/%3E%3Ctext x='50' y='72' font-family='Arial,Helvetica,sans-serif' font-size='58' font-weight='bold' fill='white' text-anchor='middle' letter-spacing='-2'%3EN%3C/text%3E%3C/svg%3E",
+        type: 'image/svg+xml',
+      },
       {
         url: '/icon-light-32x32.png',
         media: '(prefers-color-scheme: light)',
@@ -20,10 +24,6 @@ export const metadata: Metadata = {
       {
         url: '/icon-dark-32x32.png',
         media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
       },
     ],
     apple: '/apple-icon.png',
